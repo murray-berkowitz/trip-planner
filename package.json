@@ -1,0 +1,26 @@
+{
+  "name": "trip-planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e html,js,css app.js",
+    "build-css": "node-sass -w assets/stylesheets/styles.scss -o public/stylesheets"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "build-css": "^0.2.0",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "node-sass": "^4.5.3",
+    "nunjucks": "^3.0.1",
+    "pg": "^7.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.5.0",
+    "volleyball": "^1.4.1"
+  }
+}
