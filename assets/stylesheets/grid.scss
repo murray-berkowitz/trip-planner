@@ -1,0 +1,24 @@
+.col {
+	margin-left: 1%;
+}
+
+@for $i from 2 through 11 {
+	.span#{$i} {
+		$x : 12/$i;
+		width: ((100-$x+1)/$x)*1%;
+		float:left;
+	}
+}
+
+.span12 {
+	width:100%;
+	float:left;
+}
+
+.offset-8 {
+	margin-left:67.33333%;
+}
+
+.offset-9 {
+	margin-left:75.75%;
+}

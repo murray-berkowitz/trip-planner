@@ -1,0 +1,48 @@
+@import 'fonts';
+@import 'helpers';
+@import 'grid';
+.wrapper {
+	@extend .relative;
+	max-width:1400px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#menu {
+	background-color:cornsilk;
+	padding:.5em 0;
+	max-height:5vh;
+	.logo {
+		@extend .inline;
+		@extend .align-left;
+		h2 {
+		}
+	}
+	.collapsible-menu {
+		@extend .inline;
+		@extend .align-right;
+		@extend .absolute;
+		right:0;
+		top:50%;
+		transform: translateY(-50%);
+		i {
+			font-size:24px;
+		}
+	}
+}
+
+#main {
+	.planner-ui {
+		height:93vh;
+		background-color: #a658ca;
+		.map-section {
+			background-color:#00f1ff;
+			height:100%;
+		}
+		.navigation-panel {
+			@extend .absolute;
+			height: 100%;
+			background-color:rgba(125,50,50,.75);
+		}
+	}
+}

@@ -1,5 +1,5 @@
-var Sequelize = require('sequelize');
-var db = new Sequelize('postgres://localhost:5432/tripplanner', {
+const Sequelize = require('sequelize');
+const db = new Sequelize('postgres://localhost:5432/tripplanner', {
 	logging:false
 });
 db.authenticate()
@@ -10,4 +10,4 @@ db.authenticate()
     console.log('Unable to connect to the database:', err);
   });
 
-  module.exports = db;
+module.exports = db;

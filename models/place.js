@@ -1,16 +1,7 @@
-var db = require('./db');
-var Sequelize = db.Sequelize;
+const db = require('./db');
+const Sequelize = db.Sequelize;
 const Place = db.define('place', {
-	id: {
-		type: Sequelize.INTEGER,
-		primaryKey:true,
-		autoIncrement: true
-	},
-	address: {
-		type: Sequelize.STRING,
-		allowNull:false
-	},
-	address: {
+	address:{
 		type: Sequelize.STRING,
 		allowNull:false
 	},

@@ -1,12 +1,7 @@
-var db = require('./db');
-var Sequelize = db.Sequelize;
+const db = require('./db');
+const Sequelize = db.Sequelize;
 
 const Restaurant = db.define('restaurant', {
-	id: {
-		type: Sequelize.INTEGER,
-		primaryKey:true,
-		autoIncrement: true
-	},
 	name: {
 		type:Sequelize.STRING,
 		allowNull:false
@@ -18,6 +13,6 @@ const Restaurant = db.define('restaurant', {
 			max:5
 		}
 	}
-})
+});
 
 module.exports = Restaurant;

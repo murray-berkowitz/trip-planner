@@ -1,0 +1,52 @@
+.col {
+  margin-left: 1%; }
+
+.span2 {
+  width: 15.83333%;
+  float: left; }
+
+.span3 {
+  width: 24.25%;
+  float: left; }
+
+.span4 {
+  width: 32.66667%;
+  float: left; }
+
+.span5 {
+  width: 41.08333%;
+  float: left; }
+
+.span6 {
+  width: 49.5%;
+  float: left; }
+
+.span7 {
+  width: 57.91667%;
+  float: left; }
+
+.span8 {
+  width: 66.33333%;
+  float: left; }
+
+.span9 {
+  width: 74.75%;
+  float: left; }
+
+.span10 {
+  width: 83.16667%;
+  float: left; }
+
+.span11 {
+  width: 91.58333%;
+  float: left; }
+
+.span12 {
+  width: 100%;
+  float: left; }
+
+.offset-8 {
+  margin-left: 67.33333%; }
+
+.offset-9 {
+  margin-left: 75.75%; }

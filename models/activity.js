@@ -1,11 +1,6 @@
-var db = require('./db');
-var Sequelize = db.Sequelize;
+const db = require('./db');
+const Sequelize = db.Sequelize;
 const Activity = db.define('activity', {
-	id: {
-		type: Sequelize.INTEGER,
-		primaryKey:true,
-		autoIncrement: true
-	},
 	name: {
 		type:Sequelize.STRING,
 		allowNull:false
@@ -14,6 +9,6 @@ const Activity = db.define('activity', {
 		type:Sequelize.STRING,
 		allowNull:false
 	}
-})
+});
 
 module.exports = Activity;

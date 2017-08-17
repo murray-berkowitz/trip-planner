@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trip Planner</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../stylesheets/styles.css">
+	<script src="../feather-icons/feather.min.js"></script>
+</head>
+<body>
+	<nav id='menu'>
+		<div class="wrapper">
+			<div class="logo">
+				<h2>TripPlanner</h2>
+			</div>
+			<div class="collapsible-menu">
+				<i data-feather="menu"></i>
+			</div>
+		</div>
+	</nav>
+	<div id="main">
+		{%block content%}
+
+		{%endblock%}
+	</div>
+	<script>
+		feather.replace();
+	</script>
+</body>
+</html>

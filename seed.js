@@ -62,6 +62,7 @@ var data = {
   ]
 };
 
+
 db.sync({force: true})
 .then(function () {
   console.log("Dropped old data, now inserting data");
@@ -83,6 +84,6 @@ db.sync({force: true})
   console.error('There was totally a problem', err, err.stack);
 })
 .finally(function () {
-  db.close(); // creates but does not return a promise
+ // creates but does not return a promise
   return null; // stops bluebird from complaining about un-returned promise
 });

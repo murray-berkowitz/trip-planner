@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 400; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9a6b75; }
+
+.align-left, #menu .logo {
+  text-align: left; }
+
+.align-right, #menu .collapsible-menu {
+  text-align: right; }
+
+.center {
+  text-align: center; }
+
+.inline, #menu .logo, #menu .collapsible-menu {
+  display: inline-block; }
+
+.relative, .wrapper {
+  position: relative; }
+
+.absolute, #menu .collapsible-menu, #main .planner-ui .navigation-panel {
+  position: absolute; }
+
+.col {
+  margin-left: 1%; }
+
+.span2 {
+  width: 15.83333%;
+  float: left; }
+
+.span3 {
+  width: 24.25%;
+  float: left; }
+
+.span4 {
+  width: 32.66667%;
+  float: left; }
+
+.span5 {
+  width: 41.08333%;
+  float: left; }
+
+.span6 {
+  width: 49.5%;
+  float: left; }
+
+.span7 {
+  width: 57.91667%;
+  float: left; }
+
+.span8 {
+  width: 66.33333%;
+  float: left; }
+
+.span9 {
+  width: 74.75%;
+  float: left; }
+
+.span10 {
+  width: 83.16667%;
+  float: left; }
+
+.span11 {
+  width: 91.58333%;
+  float: left; }
+
+.span12 {
+  width: 100%;
+  float: left; }
+
+.offset-8 {
+  margin-left: 67.33333%; }
+
+.offset-9 {
+  margin-left: 75.75%; }
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#menu {
+  background-color: cornsilk;
+  padding: .5em 0;
+  max-height: 5vh; }
+  #menu .collapsible-menu {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+    #menu .collapsible-menu i {
+      font-size: 24px; }
+
+#main .planner-ui {
+  height: 93vh;
+  background-color: #a658ca; }
+  #main .planner-ui .map-section {
+    background-color: #00f1ff;
+    height: 100%; }
+  #main .planner-ui .navigation-panel {
+    height: 100%;
+    background-color: rgba(125, 50, 50, 0.75); }
