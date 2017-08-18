@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+$primary-red: #ff5252;
+$primary-white: #f6f4f3;
+$primary-pink-light: #eac8ca;
+$tertiary-black: #1f363d;
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
-
-h2 {
+h1,h2,h3,h4,h5,h6,p {
+	color: $tertiary-black;
+}
+h2 { 
 	font-size:36px;
 	margin: 0;
 	font-weight:400;

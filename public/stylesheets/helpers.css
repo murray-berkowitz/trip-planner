@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: #9a6b75; }
+  padding: 0; }
 
 .align-left {
   text-align: left; }
@@ -20,3 +19,6 @@ body {
 
 .absolute {
   position: absolute; }
+
+.padded {
+  padding: 14px; }

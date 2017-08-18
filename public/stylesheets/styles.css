@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Rubik', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #1f363d; }
 
 h2 {
   font-size: 36px;
@@ -9,26 +12,28 @@ h2 {
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: #9a6b75; }
+  padding: 0; }
 
 .align-left, #menu .logo {
   text-align: left; }
 
-.align-right, #menu .collapsible-menu {
+.align-right {
   text-align: right; }
 
 .center {
   text-align: center; }
 
-.inline, #menu .logo, #menu .collapsible-menu {
+.inline, #menu .logo {
   display: inline-block; }
 
 .relative, .wrapper {
   position: relative; }
 
-.absolute, #menu .collapsible-menu, #main .planner-ui .navigation-panel {
+.absolute, #main .planner-ui .navigation-panel {
   position: absolute; }
+
+.padded, #main .planner-ui .navigation-panel {
+  padding: 14px; }
 
 .col {
   margin-left: 1%; }
@@ -84,27 +89,55 @@ body {
   margin-left: 75.75%; }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   overflow: hidden; }
 
 #menu {
-  background-color: cornsilk;
   padding: .5em 0;
   max-height: 5vh; }
-  #menu .collapsible-menu {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%); }
-    #menu .collapsible-menu i {
-      font-size: 24px; }
+  #menu .logo svg {
+    stroke: #ff5252;
+    transform: scale(1.15); }
+  #menu .logo h2 {
+    color: #1f363d;
+    display: inherit; }
+
+#main .wrapper {
+  min-height: 89vh;
+  height: 89vh;
+  top: 1vh; }
 
 #main .planner-ui {
-  height: 93vh;
-  background-color: #a658ca; }
+  height: 100%; }
   #main .planner-ui .map-section {
-    background-color: #00f1ff;
-    height: 100%; }
+    height: inherit; }
   #main .planner-ui .navigation-panel {
-    height: 100%;
-    background-color: rgba(125, 50, 50, 0.75); }
+    height: inherit;
+    background-color: rgba(234, 200, 202, 0.9);
+    border: 1px solid #f6f4f3;
+    box-shadow: 1px 1px 5px 2px #ff5252;
+    box-sizing: border-box; }
+    #main .planner-ui .navigation-panel .nav-controller {
+      height: inherit;
+      margin-top: .25em; }
+      #main .planner-ui .navigation-panel .nav-controller svg {
+        transform: scale(1.3);
+        stroke: #1f363d; }
+        #main .planner-ui .navigation-panel .nav-controller svg:hover {
+          cursor: pointer;
+          fill: #f6f4f3; }
+    #main .planner-ui .navigation-panel .filters {
+      margin-top: 1.25em; }
+      #main .planner-ui .navigation-panel .filters select {
+        vertical-align: super;
+        width: 80%; }
+    #main .planner-ui .navigation-panel .planner-list {
+      height: inherit;
+      margin-top: .25em;
+      height: 100%;
+      border-left: 1px solid white;
+      box-sizing: border-box;
+      padding: 0 7px; }
+      #main .planner-ui .navigation-panel .planner-list h4 {
+        margin: 0; }

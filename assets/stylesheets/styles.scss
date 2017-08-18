@@ -3,46 +3,82 @@
 @import 'grid';
 .wrapper {
 	@extend .relative;
-	max-width:1400px;
+	max-width:1600px;
 	margin:0 auto;
 	overflow:hidden;
 }
 
 #menu {
-	background-color:cornsilk;
 	padding:.5em 0;
 	max-height:5vh;
 	.logo {
 		@extend .inline;
 		@extend .align-left;
-		h2 {
+		svg {
+			stroke: $primary-red;
+			transform:scale(1.15);
 		}
-	}
-	.collapsible-menu {
-		@extend .inline;
-		@extend .align-right;
-		@extend .absolute;
-		right:0;
-		top:50%;
-		transform: translateY(-50%);
-		i {
-			font-size:24px;
+		h2 {
+			color:$tertiary-black;
+			display: inherit;;
 		}
 	}
 }
 
 #main {
+	.wrapper {
+		min-height:89vh;
+		height:89vh;
+		top:1vh;
+	}
 	.planner-ui {
-		height:93vh;
-		background-color: #a658ca;
+		height:100%;
 		.map-section {
-			background-color:#00f1ff;
-			height:100%;
+			height:inherit;
 		}
 		.navigation-panel {
 			@extend .absolute;
-			height: 100%;
-			background-color:rgba(125,50,50,.75);
+			@extend .padded;
+			//top:50%;
+			//transform: translateY(-50%);
+			height:inherit;
+			background-color: transparentize($primary-pink-light, .1);
+			border:1px solid $primary-white;
+			box-shadow: 1px 1px 5px 2px $primary-red;
+			box-sizing:border-box;
+			.nav-controller {
+				height:inherit;
+				margin-top:.25em;
+				svg {
+					transform:scale(1.3);
+					stroke:$tertiary-black;
+					&:hover {
+						cursor:pointer;
+						fill:$primary-white;
+					}
+				}
+			}
+
+			.filters {
+				margin-top:1.25em;
+				select {
+					vertical-align: super;
+					width:80%;
+				}
+			}
+
+			.planner-list{
+				height:inherit;
+				margin-top: .25em;
+				height:100%;
+				border-left:1px solid white;
+				box-sizing:border-box;
+				padding:0 7px;
+
+				h4 {
+					margin:0;
+				}
+			}
 		}
 	}
 }
