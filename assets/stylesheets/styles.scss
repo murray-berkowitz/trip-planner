@@ -3,7 +3,7 @@
 @import 'grid';
 .wrapper {
 	@extend .relative;
-	max-width:1600px;
+	max-width:1440px;
 	margin:0 auto;
 	overflow:hidden;
 }
@@ -37,24 +37,28 @@
 			height:inherit;
 		}
 		.navigation-panel {
-			@extend .absolute;
 			@extend .padded;
+			@extend .absolute;
 			//top:50%;
 			//transform: translateY(-50%);
 			height:inherit;
-			background-color: transparentize($primary-pink-light, .1);
-			border:1px solid $primary-white;
-			box-shadow: 1px 1px 5px 2px $primary-red;
+			background-color: rgba(73, 140, 138, 0.95);
 			box-sizing:border-box;
 			.nav-controller {
+				@extend .absolute;
+				top:50%;
+				transform: translateY(-50%);
 				height:inherit;
 				margin-top:.25em;
 				svg {
-					transform:scale(1.3);
-					stroke:$tertiary-black;
+					transform:scale(1.15);
+					stroke:transparentize($tertiary-black, .15);
+					transition: all .075s linear;
 					&:hover {
 						cursor:pointer;
-						fill:$primary-white;
+						transform:scale(1.25);
+						stroke:$tertiary-black;
+						transition: all .075s linear;
 					}
 				}
 			}
@@ -64,6 +68,20 @@
 				select {
 					vertical-align: super;
 					width:80%;
+				}
+				svg:first-child{
+					 vertical-align: middle;
+					 stroke:$primary-white;
+				}
+				svg:last-child {
+					width:14px;
+					height:14px;
+					vertical-align: middle;
+					&:hover {
+						stroke:aquamarine;
+						cursor:pointer;
+						transition: all .075s linear;
+					}
 				}
 			}
 
